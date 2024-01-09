@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif ;
+    background-color: aqua;
+}
+#header-wrapper{
+    width:100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px  rgb(207, 69, 69);
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    background-color: grey;
+    
+}
+#brand-name{
+    font-size: 30px;
+    margin: 0px;
+}
+#brand-lane{
+    font-weight: 200;
+}
+body{
+    margin: 0px;
+    
+}
+#login-btn{
+    padding: 10px;
+    background-color:gray;
+    border-radius: 10px;
+}
+
+
+#cart{
+    position: relative;
+    
+}
+#count{
+   
+    border-radius: 50%;
+    background-color: #009688;
+    position: absolute;
+    bottom:12px;
+    left: 5px; 
+    color: white;
+    font-size: 8px;
+    padding: 5px;
+    pointer-events: none;
+  animation: borders 2s  infinite;
+}
+
+@keyframes borders{
+    0%{
+     
+       border: 1px solid red;
+    }
+    100%{
+       
+        border: 5px solid red;
+       
+    }
+}
+
+#count:before{
+    content: "";
+    position: absolute;
+    background-color: #009688 ;
+    width: 20px;
+    height:20px;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+#logo-wrapper{
+    height:100px;
+    width: 100px;
+    position: fixed;
+    right: 20px;
+    bottom:20px ;
+    border-radius: 35%;
+}
+#logo-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35%;
+}
+
+#footer-wrapper{
+   margin-top: 20px;
+    width: 100%;
+    border: 1px solid blue;
+    height: 180px;
+    background-color: black;
+    text-align: center;
+}
+
+#table{
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+td{
+    font-size: 12px;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#checkout-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#product-section{
+    display: block;
+    width:calc(50% - 30px) ; 
+    margin-top: 0px; 
+}
+
+
+#checkout-text{
+  margin: 0px 20px;
+    color: #e69c14;
+    font-weight:200 ;
+    margin-top: 80px;
+    }
+
+.product-wrapper{
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px rgb(207, 215, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-image-wrapper{
+    height: 100%;
+    width: 40%;
+    border-radius: 20px;
+    margin: 0px;
+}
+.checkout-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0px;
+}
+.product-detail-section{
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+   
+}
+.product-detail-section h2{
+    font-weight: 200;
+    font-size: 15px;
+}
+.product-detail-section p{
+    font-size: 10px;
+}
+
+#orderDetail-wrapper{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px rgb(207, 215, 230);
+    margin-left: 30px;
+    margin-top: 40vh;
+    width: calc(50% - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   height: 200px;
+}
+#place-order-btn{
+ background-color: #e69c14;
+ padding: 10px;
+ border-radius: 10px;
+ border-width: 0px;
+ color: greenyellow;
+}
+
+
+#home-page-heading{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin:200px auto;
+   color: chocolate;
+   font-weight: 800;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size:50px ;
+}
+
+.toatal-price{
+    color:darkorchid;
+    font-size: 15px;
+    font-weight: 200;
+}
+#grand-total-amnt{
+    color:darkorchid;
+    font-size: 25px;
+    font-weight: 300;
+}
+.product-count{
+    color:darkorchid;
+    font-size: 15px;
+    font-weight: 200;
+}
+.remove-btn{
+    margin: 5px;
+    padding: 5px;
+    border-radius:5px ;
+    border-width: 0px;
+    background-color: red;
+    color: azure;
+}

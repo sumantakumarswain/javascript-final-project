@@ -1,0 +1,257 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif 
+}
+#header-wrapper{
+    width:100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 0px 10px  rgb(207, 69, 69);
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    
+}
+#brand-name{
+    font-size: 30px;
+    margin: 0px;
+}
+#brand-lane{
+    font-weight: 200;
+}
+body{
+    margin: 0px;
+    
+}
+#login-btn{
+    padding: 10px;
+    background-color:gray;
+}
+
+
+.section-heading{
+    margin-top: 30px;
+    margin-left: 70px;
+    color: rgb(27, 25, 25);
+}
+.product-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4%;
+}
+.product-card{
+    width: 17%;
+    height: 330px;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+}
+.product-image{
+    width: 100%;
+    border-radius:20px ;
+}
+.details{
+    padding-left: 10px;
+    margin: 10px auto;
+
+}
+h3{text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+}
+h4{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+h5{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+}
+@media (max-width:718px){
+    .product-card{
+        width:calc(50% - 60px)
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color:lightpink
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?w=1060&t=st=1701062942~exp=1701063542~hmac=bfc8c76f240fe8332176dee6534a9c99b90f5f039252cc6a3153310c96c7a5a1);
+    font-family: 'Lilita One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+h1{
+    color: rgba(0, 0, 0, 0.646);
+    font-size: 60px;
+    word-spacing: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+#main>h1 span{
+    -webkit-text-stroke: 1px black;
+    text-stroke: 4px rgb(255, 255, 255);
+    color: aliceblue;
+}
+#wrapper{
+    height: 60vh ;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#wrapper i{
+    font-size: 25px;
+    pointer-events: none
+}
+#image-container{
+    height: 100%;
+    width: 50vw;
+    overflow: hidden;
+    padding: 0px 30px;
+    
+}
+#image-carousel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+   
+}
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+   position: absolute;
+   transition: 1s;
+   
+    padding: 0px 15px;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#cart{
+    position: relative;
+    
+}
+#count{
+   
+    border-radius: 50%;
+    background-color: #009688;
+    position: absolute;
+    bottom:12px;
+    left: 5px; 
+    color: white;
+    font-size: 8px;
+    padding: 5px;
+    pointer-events: none;
+  animation: borders 2s  infinite;
+}
+
+@keyframes borders{
+    0%{
+     
+       border: 1px solid red;
+    }
+    100%{
+       
+        border: 5px solid red;
+       
+    }
+}
+
+#count:before{
+    content: "";
+    position: absolute;
+    background-color: #009688 ;
+    width: 20px;
+    height:20px;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+#logo-wrapper{
+    height:100px;
+    width: 100px;
+    position: fixed;
+    right: 20px;
+    bottom:20px ;
+    border-radius: 35%;
+}
+#logo-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 35%;
+}
+
+#footer-wrapper{
+    margin: 0px auto;
+    width: 100%;
+    border: 1px solid blue;
+    height: 180px;
+    background-color: black;
+    text-align: center;
+}
+
+#table{
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+td{
+    font-size: 12px;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
